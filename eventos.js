@@ -1,5 +1,8 @@
-const btn = document.getElementsByTagName("div")
 function Saludar(){
-    alert("Hola! Soy el div")
+    alert("Hola!");
 }
-btn.addEventListener("click", Saludar)
+
+const btn = document.querySelectorAll("div");
+btn.addEventListener("click", () => {
+    alert("Hola! Soy el div");
+})
